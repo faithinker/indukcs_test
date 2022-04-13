@@ -1,12 +1,14 @@
 import React from 'react';
-import './index.css';
-import MyComponentApp from './Do-it-React/MyComponentApp';
+import TestApp from './Do-it-React/TestApp';
 
 class App extends React.Component {
   render() {
     return (
-      <MyComponentApp/>
-    );
+      <TestApp />
+    )
   }
 }
+
 export default App;
+
+//<CounterApp/>

@@ -1,0 +1,23 @@
+import React, { Component } from 'react';
+import LifecycleExample from './LifecycleExample';
+
+class LifecycleExampleApp extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { hasDestroyed: false};
+    }
+
+    componentDidUpdate() {
+        this.setState({hasDestroyed: true});
+    }
+
+    render() {
+        return (
+            <div>
+                {this.state.hasDestroyed? null : <LifecycleExampleApp/>}
+            </div>
+        );
+    }
+}
+
+export default LifecycleExampleApp;
